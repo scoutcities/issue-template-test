@@ -1,0 +1,106 @@
+name: Feature Request
+description: Template for new feature requests and development tasks
+title: "[Feature] "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide a detailed overview of the task's goal, requirements, impact for higher level context. Can get into specifics in later descriptions.
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: Overview
+      description: Provide a detailed overview of the task's goal, requirements, and impact
+      placeholder: Describe the feature or task in detail...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Relevant Components
+
+  - type: textarea
+    id: frontend-components
+    attributes:
+      label: Frontend Components
+      description: List relevant frontend files and components
+      placeholder: |
+        - `src/containers/SupplyProjectDetails.tsx` (/projects/[slug] for Supply roles)
+        - `src/components/...`
+    validations:
+      required: false
+
+  - type: textarea
+    id: backend-components
+    attributes:
+      label: Backend Components
+      description: List relevant backend files and models
+      placeholder: |
+        - `explore/models.py` (Project object)
+        - `marketing/views.py`
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Changes Required
+
+  - type: textarea
+    id: frontend-changes
+    attributes:
+      label: Frontend Changes
+      description: Describe frontend changes required in a couple sentences
+      placeholder: Describe what needs to be built or modified on the frontend...
+    validations:
+      required: true
+
+  - type: textarea
+    id: backend-changes
+    attributes:
+      label: Backend Changes
+      description: Describe backend changes required in a couple sentences
+      placeholder: Describe what needs to be built or modified on the backend...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Completion & Testing Requirements
+
+  - type: textarea
+    id: testing-requirements
+    attributes:
+      label: Testing Requirements
+      description: Add a checklist of manual testing requirements
+      placeholder: |
+        - [ ] Test feature on desktop
+        - [ ] Test feature on mobile
+        - [ ] Verify API endpoints work correctly
+        - [ ] Check for accessibility compliance
+    validations:
+      required: true
+
+  - type: textarea
+    id: boilerplate
+    attributes:
+      label: Boilerplate
+      description: Add any boilerplate or scaffolding code from sample components designed or prototyped (v0, claude, Figma, etc.)
+      placeholder: Paste any relevant code snippets, designs, or prototypes here...
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots-designs
+    attributes:
+      label: Screenshots & Designs
+      description: Add design mocks or screenshots for visual context
+      placeholder: Attach images or describe the visual requirements...
+    validations:
+      required: false
